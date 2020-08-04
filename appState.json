@@ -1,0 +1,88 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "677d9a19-e46f-45de-8ca7-6926f691ff56": {
+        "id": "677d9a19-e46f-45de-8ca7-6926f691ff56",
+        "parent": null,
+        "name": "kawspyaug4.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kawspyaug4.py",
+        "cursor": {
+          "lineNumber": 14,
+          "column": 16
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "kawspyaug4"
+        },
+        "triggers": [],
+        "testCases": {
+          "c10df313-59f8-4c76-b5da-002bb0d95bcb": {
+            "id": "c10df313-59f8-4c76-b5da-002bb0d95bcb",
+            "name": "Test event",
+            "functionId": "677d9a19-e46f-45de-8ca7-6926f691ff56",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "677d9a19-e46f-45de-8ca7-6926f691ff56"
+    ],
+    "currentFileId": "677d9a19-e46f-45de-8ca7-6926f691ff56",
+    "resources": {},
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "requests": {
+          "name": "requests",
+          "language": "python",
+          "version": "2.18.0",
+          "dev": false,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.1.4",
+    "projectName": "kawspyaug4",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1596534973200
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "kawspyaug4",
+      "url": "https://github.com/Kumudikatest/kawspyaug4"
+    }
+  }
+}
