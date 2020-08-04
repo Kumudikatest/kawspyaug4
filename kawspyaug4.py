@@ -1,17 +1,29 @@
 import requests
+import boto3
+s3 = boto3.client("s3")
 
 def handler(event, context):
     try:
-        res = requests.get(
-            "https://api.sandbox.transferwise.tech/v1/addresses",
-            params={"profile":"test"},
-            headers={"Accept":"application/json"}
+        data = s3.list_objects(
+            Bucket="cloud9-ktest",
+            MaxKeys=10
         )
-        # your code goes here
-        print(res)
+        print(data)
     except BaseException as e:
-        # error handling goes here
         print(e)
         raise(e)
+    
+        try:
+            res = requests.get(
+                "http://demo.fintechsandpit.com/contact-for-access",
+                params={},
+                headers={"Accept":""}
+            )
+            print(res)
+            # your code goes here
+        except BaseException as e:
+            # error handling goes here
+            print(e)
+            raise(e)
     
     return {"message": "Successfully executed"}

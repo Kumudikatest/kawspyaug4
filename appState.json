@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "kawspyaug4.py",
         "cursor": {
-          "lineNumber": 14,
-          "column": 16
+          "lineNumber": 27,
+          "column": 21
         },
         "config": {
           "runtime": "python3.8",
@@ -32,13 +32,58 @@
             "eventTemplate": "hello-world"
           }
         }
+      },
+      "531b5ecc-4fe6-4185-be3a-0167db700496": {
+        "id": "531b5ecc-4fe6-4185-be3a-0167db700496",
+        "parent": null,
+        "name": "k.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "k.js",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "k"
+        },
+        "triggers": [],
+        "testCases": {
+          "a24c7d62-1568-4fbb-8abb-bc4027d1a69f": {
+            "id": "a24c7d62-1568-4fbb-8abb-bc4027d1a69f",
+            "name": "Test event",
+            "functionId": "531b5ecc-4fe6-4185-be3a-0167db700496",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
     "openFiles": [
-      "677d9a19-e46f-45de-8ca7-6926f691ff56"
+      "677d9a19-e46f-45de-8ca7-6926f691ff56",
+      "531b5ecc-4fe6-4185-be3a-0167db700496"
     ],
-    "currentFileId": "677d9a19-e46f-45de-8ca7-6926f691ff56",
-    "resources": {},
+    "currentFileId": "531b5ecc-4fe6-4185-be3a-0167db700496",
+    "resources": {
+      "s3cloud9Ktest": {
+        "name": "s3cloud9Ktest",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "cloud9-ktest"
+          }
+        }
+      }
+    },
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
@@ -63,6 +108,20 @@
           "version": "2.18.0",
           "dev": false,
           "notRemovable": false
+        },
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.12.27",
+          "dev": true,
+          "notRemovable": false
+        },
+        "swagger-client": {
+          "name": "swagger-client",
+          "language": "nodejs",
+          "version": "3.8.21",
+          "dev": false,
+          "notRemovable": false
         }
       }
     }
@@ -76,7 +135,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1596534973200
+    "lastSave": 1596538284596
   },
   "VCS_STATE": {
     "provider": "GitHub",

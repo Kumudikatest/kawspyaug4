@@ -1,0 +1,8 @@
+{
+  "name": "kawspyaug4",
+  "version": "1.0.0",
+  "dependencies": {
+    "swagger-client": "3.8.21"
+  },
+  "devDependencies": {}
+}
